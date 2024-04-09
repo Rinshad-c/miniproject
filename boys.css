@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;  
+
+}
+
+
+
+
+
+nav{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav_links{
+     flex: 1;
+     text-align: center;
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+.nav_links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+}
+.nav_links ul li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #fffdfd;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+nav .f{
+    display: none;
+}
+.fa{
+    font-size: 18px;
+
+
+}
+@media(max-width:880px){
+    .nav_links ul li{
+        display: block;
+    }
+    .nav_links{
+        position: fixed;
+        background-color: black;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .nav_links ul li:hover::after{
+        width: 0%;
+    }
+}
+@media(max-width:850px){
+    .main{
+      
+        height: 70vh;
+    }
+}
+
+
+.pro{
+    width: 85%;
+    height: 85vh;
+    background-image: url(/boys/b2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+
+
+.second{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-color: black;
+    
+    
+   
+    
+    
+}
+
+.second h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 3%;
+    color: #fff;
+}
+
+.second .mai{
+    margin-top: 5%;
+    margin: auto;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+   
+
+}
+
+.second .bor{
+    width: 250px;
+    height: 360px;
+    border-radius: 15px 15px 5px 5px;
+    border: 2px solid white;
+    box-shadow: 0px 10px 20px black;
+    margin-bottom: 20px; 
+    background-color: #fff;
+    
+}
+
+.bor img{
+    width: 200px;
+    height: 200px;
+    margin: 4%;
+    transition: 0.2s;
+}
+
+.bor img:hover{
+    transform: scale(1.05);
+}
+
+.bor h6{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bor p{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.icon-star{
+    margin-top: -15px;
+}
+
+.icon-star .fa-sharp{
+    font-size: 10px;
+    color: #777;
+
+}
+
+
+.icon-star .fa-solid{
+    font-size: 10px;
+    color: #777;
+}
+
+
+.bor .btn{
+    font-size: 12px;
+    padding: 4px 6px;
+    color: black;
+    background-color: #fff;
+    margin-top: 3%;
+    transition: 0.2s;
+}
+
+
+.bor .btn:hover{
+    background-color: #9a9a9a;
+    transform: scale(1.1);
+}
+
+
+@media(max-width:900px){
+    .second{
+        width: 100%;
+        margin-top: -2px;
+    }
+    .second .mai{
+        align-items: center;
+        justify-content: center;
+    }
+    .second h1{
+        font-size: 26px;
+        
+    }
+    
+      
+        
+       
+        
+        
+    
+}
+
+
+.third{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-log{
+    width: 85%;
+    height: 85vh;
+    background-image: url(./boys/b8.jpg);
+    background-size: cover;
+    background-position: center;
+    
+
+}
+@media(max-width:850px){
+    .third{
+        height: 80vh;
+        margin-top: -2px;
+    }
+    .img-log{
+        height: 65vh;
+    }
+}
+
+.fourth{
+    width: 100%;
+    
+}
+.images{
+    display: flex;
+    gap: 8px;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    transition: 0.2s;
+    
+}
+
+.images::-webkit-scrollbar{display: none;}
+
+
+
+.images img{
+    width: 250px;
+    height: 250px;
+    transition: 0.2s;
+    border-radius: 30%;
+    
+} 
+
+ .images img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+footer *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer{
+    color: #fff;
+    background: #121212;
+}
+
+footer p{
+    color: #ccc;
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer h4{
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.footer-con{
+    
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.footer1{
+    background:linear-gradient(rgba(0, 0, 0, 0.863),rgba(0, 0, 0, 0.863)), url(/pic/matthew-henry-VviFtDJakYk-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+
+.footer1 .footer-top .footer-con,
+.footer1 .col2,
+.footer1 .footer-bottom .footer-con {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+
+
+}
+
+.footer1 .footer-bottom .footer-con{
+    padding: 1em 2em;
+    align-items: center;
+}
+
+.footer1 .menu a:hover{
+    text-decoration: underline;
+}
+.brand{
+    display: block;
+    font-size: 5px;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.media-icons li,
+.service-icon li{
+    display: inline-block;
+    margin: 0.5em 0.5m 0.5em 0;
+}
+
+.media-icons a{
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+
+.media-icons a:hover{
+    color: #111;
+    background-color: #fff;
+
+
+}
+
+.service-icon a{
+    font-size: 1.6em;
+}
+
+.service-icon a:hover{
+    color: #dbdbdb;
+}
+
+.footer-bottom{
+    border-top: 1px solid #dbdbdb;
+} 
+
+
+@media(max-width:900px) {
+    .footer-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer1 .footer-top .con,
+    .footer1 .footer-bottom .con{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer1 .col2{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .col3{
+        flex-wrap: wrap;
+    }
+}
